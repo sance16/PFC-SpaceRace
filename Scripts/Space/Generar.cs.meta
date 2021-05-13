@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: f33832a9971e45a4e80cd1537eb1d6bf
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - naveAzul: {fileID: 1431770313270534, guid: 8e56a67858cca874f9296fc6d1fb9dcf, type: 2}
+  - naveRoja: {fileID: 1717995630143898, guid: 80a9527287fa92c499f7547940172a99, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
