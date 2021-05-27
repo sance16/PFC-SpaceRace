@@ -51,9 +51,10 @@ MonoBehaviour:
   NetworkCameraNetworkObject:
   - {fileID: 139536, guid: 661f29f0c0c86fa47b6015bd602d0ac6, type: 3}
   ShipMoveNetworkObject:
-  - {fileID: 8878126825861855768, guid: 022779e209d637240b77222433158d86, type: 3}
-  ShootBulletNetworkObject: []
+  - {fileID: 861259336371653837, guid: f3a597495a90ee64c93661ac4909d67c, type: 3}
+  ShootBulletNetworkObject:
+  - {fileID: 9015238373817512977, guid: 66a631811cf67ed48942aab205850180, type: 3}
   SpaceMoveNetworkObject:
-  - {fileID: 4192375258540389175, guid: 34c36979f95c8d94fa9de5ff355aeab3, type: 3}
+  - {fileID: 2143909608830067501, guid: 5ca81bb5ad4804242b5333a97bf75d2c, type: 3}
   TestNetworkObject: []
   automaticScenes: 1

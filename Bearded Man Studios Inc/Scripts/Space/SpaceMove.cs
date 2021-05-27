@@ -1,14 +1,20 @@
 ﻿using BeardedManStudios.Forge.Networking;
 using BeardedManStudios.Forge.Networking.Generated;
+using System.Collections;
 using UnityEngine;
 
 public class SpaceMove : SpaceMoveBehavior
 {
     private float speed = 80.0F; //Velocidad de movimiento
     private float rotationSpeed = 100.0F; //Velocidad de rotación
+    public GameObject particles;
+    public GameObject boostAudio;
+    public GameObject damageAudio;
+
 
     void Update()
     {
+        //movimiento nave roja
         if (!networkObject.IsOwner)
         {
             transform.position = networkObject.position;
@@ -24,5 +30,38 @@ public class SpaceMove : SpaceMoveBehavior
 
         networkObject.position = transform.position;
         networkObject.rotation = transform.rotation;
+
+        //Restart horizontal naves
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            GameObject.FindGameObjectWithTag("naveRoja").transform.position = new Vector3(GameObject.FindGameObjectWithTag("naveRoja").transform.localPosition.x, 26, GameObject.FindGameObjectWithTag("naveRoja").transform.localPosition.z);
+            GameObject.FindGameObjectWithTag("naveRoja").transform.rotation = Quaternion.Euler(0, GameObject.FindGameObjectWithTag("naveRoja").transform.localRotation.eulerAngles.y, 0);
+        }
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        //reducción de velocidad al colisionar con pinchos
+        if (collision.gameObject.tag == "pinchos")
+        {
+            speed = 20.0F;
+            damageAudio.SetActive(true);
+
+        }
+        //aumento de velocidad al colisionar con boostspeed
+        if (collision.gameObject.tag == "boost")
+        {
+            speed = 200.0F;
+            particles.SetActive(true);
+            boostAudio.SetActive(true);
+        }
+        StartCoroutine(velocidad());
+    }
+    //Después de 5 segundos vuelve a la velocidad normal
+    IEnumerator velocidad()
+    {
+        yield return new WaitForSecondsRealtime(5);
+        speed = 80.0F;
+        particles.SetActive(false);
+        boostAudio.SetActive(false);
+        damageAudio.SetActive(false);
     }
 }

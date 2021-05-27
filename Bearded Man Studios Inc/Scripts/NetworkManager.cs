@@ -1,6 +1,7 @@
 ﻿using BeardedManStudios.Forge.Networking.Frame;
 using BeardedManStudios.Forge.Networking.Generated;
 using BeardedManStudios.SimpleJSON;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -13,7 +14,12 @@ namespace BeardedManStudios.Forge.Networking.Unity
 	{
 		public static NetworkManager Instance { get; private set; }
 
-		public UnityAction<int, LoadSceneMode> networkSceneChanging;
+        internal void InstantiateShootBullet(string v, Action<GameObject> AsyncCallback)
+        {
+            throw new NotImplementedException();
+        }
+
+        public UnityAction<int, LoadSceneMode> networkSceneChanging;
 		public UnityAction<Scene, LoadSceneMode> networkSceneLoaded;
 		public event NetWorker.PlayerEvent playerLoadedScene;
 

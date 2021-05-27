@@ -1,27 +1,90 @@
 fileFormatVersion: 2
-guid: 880355b587503c546bf0f93d32427b76
+guid: 3f72bdb56223fa54cbb9f67e8884d515
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: BezierCurve
+    100000: Arma_spiketrap
     100002: Camera
-    100004: Cube
-    100006: //RootNode
-    100008: Sun
-    400000: BezierCurve
+    100004: Camera_001
+    100006: Camera_002
+    100008: Camera_004
+    100010: Camera_005
+    100012: Camera_006
+    100014: Lamp
+    100016: Lamp_001
+    100018: Lamp_002
+    100020: Lamp_003
+    100022: Lamp_004
+    100024: Lamp_005
+    100026: Lamp_006
+    100028: Lamp_007
+    100030: Plane
+    100032: Point
+    100034: Point_001
+    100036: Point_002
+    100038: //RootNode
+    100040: Spikes
+    100042: Spiketrap
+    100044: Spiketrap_mainbody
+    100046: Spiketrap_spikes
+    400000: Arma_spiketrap
     400002: Camera
-    400004: Cube
-    400006: //RootNode
-    400008: Sun
+    400004: Camera_001
+    400006: Camera_002
+    400008: Camera_004
+    400010: Camera_005
+    400012: Camera_006
+    400014: Lamp
+    400016: Lamp_001
+    400018: Lamp_002
+    400020: Lamp_003
+    400022: Lamp_004
+    400024: Lamp_005
+    400026: Lamp_006
+    400028: Lamp_007
+    400030: Plane
+    400032: Point
+    400034: Point_001
+    400036: Point_002
+    400038: //RootNode
+    400040: Spikes
+    400042: Spiketrap
+    400044: Spiketrap_mainbody
+    400046: Spiketrap_spikes
     2000000: Camera
-    2100000: Material
-    2300000: BezierCurve
-    2300002: Cube
-    3300000: BezierCurve
-    3300002: Cube
-    4300000: BezierCurve
-    4300002: Cube
-    10800000: Sun
+    2000002: Camera_001
+    2000004: Camera_002
+    2000006: Camera_004
+    2000008: Camera_005
+    2000010: Camera_006
+    2100000: Body_textures
+    2100002: Spike_textures
+    2100004: No Name
+    2100006: Spiketrap
+    2300000: Plane
+    2300002: Spiketrap_mainbody
+    2300004: Spiketrap_spikes
+    3300000: Plane
+    3300002: Spiketrap_mainbody
+    3300004: Spiketrap_spikes
+    4300000: Spiketrap_mainbody
+    4300002: Spiketrap_spikes
+    4300004: Plane
+    4300006: Spiketrap
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Lamp
+    10800002: Lamp_001
+    10800004: Lamp_002
+    10800006: Lamp_003
+    10800008: Lamp_004
+    10800010: Lamp_005
+    10800012: Lamp_006
+    10800014: Lamp_007
+    10800016: Point
+    10800018: Point_001
+    10800020: Point_002
+    13700000: Spiketrap
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -76,7 +139,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -103,7 +166,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

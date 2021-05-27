@@ -10,10 +10,10 @@ public class CambiarScene : MonoBehaviour
     public GameObject canvas;
     public GameObject naveRoja;
     public GameObject naveAzul;
-
+    //Quitar canvas y poner contador
     public void cambiarescena(string SampleScene) {
-        naveAzul.transform.position = new Vector3(142, 0, 870);
-        naveRoja.transform.position = new Vector3(142, 0, 910);
         canvas.SetActive(false);
+        naveAzul.transform.position = new Vector3(-230, 21, 1260);
+        naveRoja.transform.position = new Vector3(-230, 21, 1300);
     }
 }
